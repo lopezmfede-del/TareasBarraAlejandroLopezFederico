@@ -30,6 +30,10 @@ def multiplo_2(base,multiplo):
     #Los dos tienen que ser enteros y no negativos (0 permitido por el test)
     if not isinstance(base, int) or not isinstance(multiplo,int) or base < 0 or multiplo < 0:
         return ERROR_PARAMETROS, None
-
+    #Multiplo debe estar en el conjunto permitido
+    if multiplo not in (1, 2, 4, 8, 16):
+        return ERROR_MULTIPLO, None
+    
+    return EXITO, base*multiplo
     
 
