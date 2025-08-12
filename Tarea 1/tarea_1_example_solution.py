@@ -23,5 +23,6 @@ def count_char(cadena, caracter):
     #Finalmente, retornar el código de éxito y la cantidad
     return EXITO, cantidad
 
-
+def multiplo_2(base,multiplo):
+    
     
