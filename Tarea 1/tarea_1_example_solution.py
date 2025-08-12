@@ -24,5 +24,7 @@ def count_char(cadena, caracter):
     return EXITO, cantidad
 
 def multiplo_2(base,multiplo):
-    
+    ERROR_PARAMETROS = -400
+    ERROR_MULTIPLO = -500
+    EXITO = 0
     
