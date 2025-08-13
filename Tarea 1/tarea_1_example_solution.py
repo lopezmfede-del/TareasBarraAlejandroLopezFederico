@@ -22,7 +22,7 @@ def count_char(cadena, caracter):
         return ERROR_CARACTER, None
 
     # Cuarto, contar cantidad de veces que aparece 'caracter' en 'cadena'
-    cantidad = cadena.count(car)
+    cantidad = cadena.count(caracter)
 
     # Finalmente, retornar el código de éxito y la cantidad
     return EXITO, cantidad
