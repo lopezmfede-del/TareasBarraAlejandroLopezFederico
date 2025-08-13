@@ -1,4 +1,4 @@
-def count_char(cadena, car):
+def count_char(cadena, caracter):
     # Definición de codigos de exito y erores
     EXITO = 0
     ERROR_TIPO_CADENA = -100
@@ -14,7 +14,11 @@ def count_char(cadena, car):
         return ERROR_FORMATO_CADENA, None
 
     # Tercero, verificar que 'caracter' sea un único carácter alfanumérico
-    if not (isinstance(car, str) and len(car) == 1 and car.isalnum()):
+    if not (
+        isinstance(caracter, str)
+        and len(caracter) == 1
+        and caracter.isalnum()
+    ):
         return ERROR_CARACTER, None
 
     # Cuarto, contar cantidad de veces que aparece 'caracter' en 'cadena'
